@@ -1,0 +1,20 @@
+Minor changes to remove compiler warnings and possible unsafe procedures:
+-Made set-member functions final where applicable
+-Added @Override notation for toString method in Account.java
+-Made Inventory and Account classes abstract
+-Made inventoryList final (adding and deleting objects is still allowed but inventoryList cannot be re-assigned)
+-Made all varibles and functions static in Inventory.java
+-Removed constructors in Inventory.java
+-Removed redundant 'StoreObject' specification from the diamond inference <> in Inventory.java and StandardAccount.java assignments in constructors
+-Used enhanced for loop in getHistory function in StandardAccount.java (easier to read)
+
+Other minor changes:
+-Changed 'gender' to char data type instead of string
+-Removed default constructor in StoreObject.java as it served no functional purpose
+
+Final changes:
+-Updated addToInventory function to handle adding an item that already exists (updates quantity)
+-Added a specific 'equals' function that returns true if the items being compared have the same itemNumber
+-Added a 'copy' function to StoreObject.java
+-Added a 'getItem' function to Inventory.java
+-Added a test implentation in the main java file "ElectronicsStore.java" to test the new functions
