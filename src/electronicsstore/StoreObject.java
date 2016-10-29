@@ -121,4 +121,14 @@ public class StoreObject
             this.price, this.quantityOnHand, this.quantityOnOrder);
         return copy;
     }
+    
+    @Override
+    public String toString()
+    {
+        return String.format("%12s\n"
+                + "%45s"
+                + "",
+                this.getName(),
+                this.getDescription());
+    }
 }
